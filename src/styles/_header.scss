@@ -1,0 +1,46 @@
+@use 'variaveis' as *;
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid $corTextoPrincipal;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        background-color: $corDeFundo;
+        padding: 10px 50px;
+
+        @media (max-width: 768px) {
+            padding: 0 10px;
+        }
+    }
+
+    &__logo {
+        width: 100px;
+
+        @media (max-width: 768px) {
+            width: 50px;
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}

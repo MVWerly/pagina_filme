@@ -3,9 +3,334 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batman Begins</title>
+    <title>Batman - O cavaleiro da Trevas</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <img class="header__logo" src="./dist/images/batman_logo.jpg" alt="">
+            <div class="header__title">
+                <h1 class="title">
+                    Batman
+                </h1>
+                <p class="text">
+                    O cavaleiro das Trevas
+                </p>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+    </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="cenas" class="shows__tabs__button">
+                Cenas
+            </button>
+            <button data-tab-button="elenco" class="shows__tabs__button shows__tabs__button--is-active">
+                Elenco
+            </button>
+            <button data-tab-button="onde_assistir" class="shows__tabs__button">
+                Onde assistir
+            </button>
+        </nav>
+        <div data-tab-id="cenas" class="content">
+            <ul class="shows__list__scene">
+                    <li class="shows__list__scene__item">
+                        <img src="./dist/images/cenas/cena_1.jpg" alt="#">
+                    </li>
+                    <li class="shows__list__scene__item">
+                        <img src="./dist/images/cenas/cena_2.jpg" alt="#">
+                    </li>
+                    <li class="shows__list__scene__item">
+                        <img src="./dist/images/cenas/cena_3.jpg" alt="#">
+                    </li>
+                    <li class="shows__list__scene__item">
+                        <img src="./dist/images/cenas/cena_4.jpg" alt="#">
+                    </li>
+                    <li class="shows__list__scene__item">
+                        <img src="./dist/images/cenas/cena_5.jpg" alt="#">
+                    </li>
+                    <li class="shows__list__scene__item">
+                        <img src="./dist/images/cenas/cena_6.jpg" alt="#">
+                    </li>
+            </ul>          
+        </div>
+        <div data-tab-id="elenco" class="content content--is-active">
+            <ul class="shows__list__cast">
+                    <li class="shows__list__cast__item">
+                        <img src="./dist/images/elenco/christian_bale.jpg" alt="#">
+                        <h2 class="text">Christian Bale</h2>
+                        <p class="text--small">Bruce Wayne</p>
+                    </li>
+                    <li class="shows__list__cast__item">
+                        <img src="./dist/images/elenco/heath_ledger.jpg" alt="#">
+                        <h2 class="text">Heath Ledger</h2>
+                        <p class="text--small">Coringa</p>
+                    </li>
+                    <li class="shows__list__cast__item">
+                        <img src="./dist/images/elenco/gary_oldman.jpg" alt="#">
+                        <h2 class="text">Gary Oldman</h2>
+                        <p class="text--small">Comissário Gordon</p>
+                    </li>
+                    <li class="shows__list__cast__item">
+                        <img src="./dist/images/elenco/aaron_heckhart.jpg" alt="#">
+                        <h2 class="text">Aaron Eckhart</h2>
+                        <p class="text--small">Duas-Caras</p>
+                    </li>
+                    <li class="shows__list__cast__item">
+                        <img src="./dist/images/elenco/michael_caine.jpg" alt="#">
+                        <h2 class="text">Michael Caine</h2>
+                        <p class="text--small">Alfred Pennyworth</p>
+                    </li>
+                    <li class="shows__list__cast__item">
+                        <img src="./dist/images/elenco/morgan_freeman.jpg" alt="#">
+                        <h2 class="text">Morgan Freeman</h2>
+                        <p class="text--small">Lucius Fox</p>
+                    </li>
+                    <li class="shows__list__cast__item">
+                        <img src="./dist/images/elenco/maggie_gyllehall.jpg" alt="#">
+                        <h2 class="text">Maggie Gyllehaal</h2>
+                        <p class="text--small">Rachel Dawes</p>
+                    </li>
+                    <li class="shows__list__cast__item">
+                        <img src="./dist/images/elenco/cilihan_murphy.jpg" alt="#">
+                        <h2 class="text">Cillian Murphy</h2>
+                        <p class="text--small">Espantalho</p>
+                    </li>
+            </ul>
+        </div>
+        <div data-tab-id="onde_assistir" class="content">
+            <div class="shows__list__watch">
+                    <h2 class="title">Ver filme</h2>
+                    <p class="text--small">Disponível em</p>
+                    <div class="stream">
+                        <a href="#">
+                            <div class="stream__item">
+                                <div>
+                                    <img class="stream__item__image" src="./dist/images/stream_icons/max_icon.jpg" alt="#">
+                                </div>
+                                <div>
+                                    <h2 class="title--small">
+                                        Max
+                                    </h2>
+                                    <p class="text--small">
+                                        Subscrição
+                                    </p>
+                                </div>
+                                <div>
+                                    <button class="stream__item__button">
+                                        <img src="./dist/images/stream_icons/play_icon.jpg" alt="">
+                                        <p class="text--small">Ver</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="stream__item">
+                                <div>
+                                    <img class="stream__item__image" src="./dist/images/stream_icons/apple_icon.jpg" alt="#">
+                                </div>
+                                <div>
+                                    <h2 class="title--small">
+                                        Apple Tv
+                                    </h2>
+                                    <p class="text--small">
+                                        A partir de R$ 4,90
+                                    </p>
+                                </div>
+                                <div>
+                                    <button class="stream__item__button">
+                                        <img src="./dist/images/stream_icons/play_icon.jpg" alt="">
+                                        <p class="text--small">Ver</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="stream__item">
+                                <div>
+                                    <img class="stream__item__image" src="./dist/images/stream_icons/prime_icon.jpg" alt="#">
+                                </div>
+                                <div>
+                                    <h2 class="title--small">
+                                        Prime
+                                    </h2>
+                                    <p class="text--small">
+                                        Subscrição
+                                    </p>
+                                </div>
+                                <div>
+                                    <button class="stream__item__button">
+                                        <img src="./dist/images/stream_icons/play_icon.jpg" alt="">
+                                        <p class="text--small">Ver</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="stream__item">
+                                <div>
+                                    <img class="stream__item__image" src="./dist/images/stream_icons/google_icon.jpg" alt="#">
+                                </div>
+                                <div>
+                                    <h2 class="title--small">
+                                        Google Play Filmes
+                                    </h2>
+                                    <p class="text--small">
+                                        A partir de R$ 11,90
+                                    </p>
+                                </div>
+                                <div>
+                                    <button class="stream__item__button">
+                                        <img src="./dist/images/stream_icons/play_icon.jpg" alt="">
+                                        <p class="text--small">Ver</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="curiosities">
+        <h2 class="title">
+            Curiosidades
+        </h2>
+        <ul class="curiosities__informations">
+            <li class="curiosities__informations__item">
+                <div data-info-title class="curiosities__informations__item__title title--small">
+                    1. Forte influência das histórias em quadrinhos
+                </div>
+                <div class="curiosities__informations__item__text text--big">
+                    O surgimento do Coringa no longa foi baseado em sua primeira aparição nos quadrinhos, em 1940. 
+                    O diretor Christopher Nolan e o coautor do longa, David S. Goyer, usaram a edição 1 de Batman
+                    para apresentar o vilão e também usaram elementos de histórias clássicas, como “O Longo Dia 
+                    das Bruxas”, “A Piada Mortal” e “O Retorno do Cavaleiro das Trevas”.
+                </div>
+            </li>
+            <li class="curiosities__informations__item">
+                <div data-info-title class="curiosities__informations__item__title title--small">
+                    2. Coringa: qualquer semelhança com a vida real não é mera coincidência                 
+                </div>
+                <div class="curiosities__informations__item__text text--big">
+                    O ator que deu vida ao Coringa, Heath Ledger, fez um laboratório próprio para encarnar o palhaço 
+                    criminoso e se trancou em um quarto de hotel durante várias semanas, testando e treinando vozes e 
+                    trejeitos que estivessem satisfatoriamente assustadores. Dizem que entre suas inspirações estavam 
+                    os ícones Sid Vicious e Johnny Rotten, da banda Sex Pistols, e o personagem Alex, do clássico filme 
+                    de Stanley Kubrick, "Laranja Mecânica".                
+                </div>
+            </li>
+            <li class="curiosities__informations__item">
+                <div data-info-title class="curiosities__informations__item__title title--small">
+                    3. Heath Ledger sempre foi a primeira opção para viver o Coringa                
+                </div>
+                <div class="curiosities__informations__item__text text--big">
+                    Para o diretor Nolan, essa foi a decisão mais simples a ser tomada. Segundo ele, Heath sempre foi sua 
+                    opção número um, senão a única, para interpretar o arqui-inimigo de Batman nas telas. “Quando soube 
+                    que ele estava interessado no papel, não tive dúvidas; era possível ver nos olhos dele que era a escolha 
+                    certa a se fazer”, afirmou durante uma entrevista para a revista Newsweek.                
+                    </div>
+            </li>
+            <li class="curiosities__informations__item">
+                <div data-info-title class="curiosities__informations__item__title title--small">
+                    4. Querido diário, por que tão sério?                
+                </div>
+                <div class="curiosities__informations__item__text text--big">
+                    Em 2013, o pai de Heath fez revelações importantes para os fãs do ator em um documentário póstumo. Ele 
+                    revelou que o filho se dedicava e fazia uma imersão para todos os personagens que viveu, mas para o 
+                    Coringa, ele realmente foi a fundo. Havia rumores, que foram confirmados no documentário, sobre um diário 
+                    que Ledger teria preparado durante essa fase, com referências, recortes (a maioria de Alex, do filme 
+                    "Laranja Mecânica"), anotações, frases manuscritas, pedaços de falas do roteiro e outros itens que o 
+                    ajudariam a compor o personagem.                 
+                </div>
+            </li>
+            <li class="curiosities__informations__item">
+                <div data-info-title class="curiosities__informations__item__title title--small">
+                    5. Rachel Dawes mudou de rosto ao longo da trilogia                
+                </div>
+                <div class="curiosities__informations__item__text text--big">
+                    Que Katie Holmes começou, mas não terminou a trilogia como Rachel Dawes, a amiga de infância de Bruce Wayne, 
+                    os fãs estão cansados de saber. Após o primeiro filme, a atriz optou por gravar a comédia "Loucas por Amor, 
+                    Viciadas em Dinheiro", em vez de dar sequência à personagem e ao amor platônico do cavaleiro das trevas.
+                    Christopher Nolan teve que procurar outras candidatas e considerou nomes como Emily Blunt e Rachel McAdams 
+                    para o papel. Maggie Gyllenhaal ganhou a chance de ficar nas mãos do arqui-inimigo de Batman e afirma que 
+                    sua decisão foi tomada, em grande parte, pelo fato de ser Nolan o diretor da sequência.                 
+                </div>
+            </li>
+            <li class="curiosities__informations__item">
+                <div data-info-title class="curiosities__informations__item__title title--small">
+                    6. Cara ou coroa? Harvey Dent foi o foco                
+                </div>
+                <div class="curiosities__informations__item__text text--big">
+                    Todo o foco que o primeiro filme da série deu a Bruce Wayne foi redirecionado a Harvey Dent no segundo longa-metragem. 
+                    Para o protagonista da história, o diretor Nolan considerou alguns nomes de peso, como Matt Damon, Mark Ruffalo e 
+                    Ryan Phillippe, até chegar a Aaron Eckhart, que o lembrava de Robert Redford.                
+                </div>
+            </li>
+            <li class="curiosities__informations__item">
+                <div data-info-title class="curiosities__informations__item__title title--small">
+                    7. Michael Caine não achou que filme iria funcionar… até Ledger estar no elenco                
+                </div>
+                <div class="curiosities__informations__item__text text--big">
+                    Quando Nolan decidiu lançar um novo Coringa, os fãs de Batman não foram os únicos a ficar receosos. Michael Caine, 
+                    intérprete do mordomo Alfred, demonstrou tensão ao saber da notícia. Principalmente porque a interpretação de Jack 
+                    Nicholson, no filme de 1989, foi tão emblemática que até hoje é muito bem lembrada. Porém, com a entrada de Ledger, 
+                    Michael ficou mais confiante no potencial do filme.                 
+                </div>
+            </li>
+            <li class="curiosities__informations__item">
+                <div data-info-title class="curiosities__informations__item__title title--small">
+                    8. Características do Coringa foram inspiradas na vida real                 
+                </div>
+                <div class="curiosities__informations__item__text text--big">
+                    O Coringa de Ledger é marcante por uma série de características, e o que o torna ainda mais assustador é a realidade 
+                    dos detalhes. As cicatrizes, por exemplo, foram baseadas em um entregador que Conor O’Sullivan, supervisor de 
+                    maquiagem e prótese, encontrou por acaso. Chamada de “sorriso de Chelsea”, as marcas no rosto do rapaz teriam sido 
+                    adquiridas em uma briga com cachorros e chamaram a atenção e logo foram adaptadas ao personagem de Heath.
+                    Outra característica forte do palhaço do crime é o tique nervoso de lamber os lábios constantemente. A mania surgiu 
+                    devido à prótese, que ia se deslocando com o tempo; para colocá-la no lugar sem ter que voltar para o camarim, Ledger 
+                    acabou criando um trejeito que deixou o personagem um pouco mais macabro.                 
+                </div>
+            </li>
+            <li class="curiosities__informations__item">
+                <div data-info-title class="curiosities__informations__item__title title--small">
+                    9. A sequência com o caminhão tombando foi real!                
+                </div>
+                <div class="curiosities__informations__item__text text--big">
+                    De olho em cada oportunidade de hiper-realismo do filme, o diretor Nolan aproveitou para fazer algo grande. Fugindo dos 
+                    padrões de cenas recriadas em realidade virtual, aquela em que Batman entrelaça o caminhão dirigido pelo Coringa com 
+                    cabos de aço, forçando o tombamento, foi realmente feita com um caminhão real e na rua de Chicago.
+                    Chris Corbould, responsável pelos efeitos especiais, realizou uma série de testes — fora da cidade, obviamente —, até 
+                    chegar a um método em que tombar o veículo fosse possível e seguro para atores, equipe de produção e moradores da região. 
+                    A princípio, foi cogitado algo menor, como um carro da SWAT ou uma van. Contudo, quanto mais o filme se desenvolvia, mais 
+                    a ideia do caminhão rolando se consolidava para o diretor. “Ninguém havia feito daquela maneira antes; foi algo maravilhoso 
+                    de assistir”, comentou.                 
+                </div>
+            </li>
+            <li class="curiosities__informations__item">
+                <div data-info-title class="curiosities__informations__item__title title--small">
+                    10. Christian Bale realmente subiu pelas paredes                
+                </div>
+                <div class="curiosities__informations__item__text text--big">
+                    Vestir a camisa e a capa do Cavaleiro das Trevas tem suas vantagens, mas também responsabilidades. Uma das cenas mais 
+                    emblemáticas, quando Batman está no alto do Sears Tower, de Chicago, com a capa voando ao fundo, foi feita pelo próprio 
+                    Christian Bale. O ator dispensou o dublê e encarou os 110 andares.                
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <p class="text--small">
+            Este é um projeto artístico de portfólio criado para demonstrar habilidades em desenvolvimento web.
+        </p>
+        <p class="text--small">
+            &copy; || Todos os direitos reservado - Marcus Vinicius Werly ||
+        </p>
+    </footer>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>

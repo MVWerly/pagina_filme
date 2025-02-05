@@ -1,0 +1,18 @@
+@use 'variaveis' as *;
+
+.footer {
+    border-top: 2px solid $corTextoPrincipal;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 18px;
+    
+    @media (max-width: 768px) {
+        padding: 0 10px;
+
+        p {
+            text-align: center;
+        }
+    }
+}

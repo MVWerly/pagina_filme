@@ -1,0 +1,69 @@
+@use 'variaveis' as *;
+@use 'header';
+@use 'hero';
+@use 'shows';
+@use 'curiosities';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Staatliches", sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: $corDeFundo;
+}
+
+@mixin text($fontSize: 14px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $corTextoPrincipal;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: $corTextoSecundario;
+}
+
+.text--big {
+    @include text(16px);
+
+    @media (max-width: 768px) {
+        @include text(14px)
+    }
+}
+
+.text {
+    @include text;
+    
+    @media (max-width: 768px) {
+        @include text(12px)
+    }
+}
+
+.text--small {
+    @include text(12px);
+
+    @media (max-width: 768px) {
+        @include text(10px)
+    }
+}
+
+.title {
+    @include title;
+
+    @media (max-width: 768px) {
+        @include title(24px)
+    }
+}
+
+.title--small {
+    @include title(22px);
+
+    @media (max-width: 768px) {
+        @include title(20px);
+    }
+}

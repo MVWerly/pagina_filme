@@ -1,0 +1,21 @@
+.hero {
+    padding: 5.6vw;
+    height: 100vh;
+    background-image: url(../images/batman_hero.jpg);
+    background-size: cover;
+    background-position: 0;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 425px) {
+        max-width: 425px;
+        background-image: url(../images/batman_hero_mobile.jpg);
+        width: 100%;
+    }
+
+    @media (min-width: 425px) and (max-width: 768px) {
+        max-width: 768px;
+        width: 100%;
+        background-image: url(../images/batman_hero_mobile_425-768.jpg);
+    }
+}
